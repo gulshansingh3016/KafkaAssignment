@@ -10,9 +10,11 @@ User message --->{"id":"1","name":"some_name","age":"24","course":"BTech."}
 4. Create Serailization and Deserialization class for converting the message in byte stream form when it is send from Producer and again deserialize the message when it is consumed by Consumer
 
 *START THE KAFKA ENVIRONMENT
-bin/zookeeper-server-start.sh config/zookeeper.properties
-$ bin/kafka-server-start.sh config/server.properties
+
+> $ bin/zookeeper-server-start.sh config/zookeeper.properties
+> $ bin/kafka-server-start.sh config/server.properties
 
 *Create Topic
-bin/kafka-topics.sh --create --topic student-info --bootstrap-server localhost:9092
+
+> $ bin/kafka-topics.sh --create --topic student-info --bootstrap-server localhost:9092
 
